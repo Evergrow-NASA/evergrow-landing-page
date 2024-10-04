@@ -84,6 +84,11 @@ body {
   font-family: var(--font-open-sans), Helvetica, sans-serif;
 }
 
+main div {
+  height: 100vh;
+  background-color: #447055;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
