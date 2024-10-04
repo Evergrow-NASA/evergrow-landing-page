@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const ProblemContext = () => {
   return (
-    <div className="relative flex flex-row justify-between w-full h-screen">
-      <div className="flex flex-col ml-[10%] mt-40">
+    <div className="relative flex flex-row justify-between w-full h-screen gap-x-10">
+      <div className="flex flex-col ml-[10%] mt-[12%]">
         <h4 className="mb-5">Lorem Ipsum</h4>
         <Header title="Problem Context" />
         <p className="mb-4 mt-14 w-[28rem]">

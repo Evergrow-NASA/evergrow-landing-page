@@ -17,7 +17,7 @@ function Hero() {
       <div
         data-scroll
         data-scroll-speed="0.7"
-        className="flex flex-col ml-40 mt-52 relative"
+        className="flex flex-col ml-40 mt-[12%] relative"
       >
         <p className="headline w-[52rem]">Lorem ipsum dolor sit amet.</p>
         <p className="subheadline w-[40rem] mt-6 mb-12">
