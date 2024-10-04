@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`p-4 min-w-40 transition duration-500 font-bold ${ButtonStyles[style]} ${className}  ${
+      className={`p-4 w-40 transition duration-500 font-bold ${ButtonStyles[style]} ${className}  ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
       }`}
       onClick={onClick}
