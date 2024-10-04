@@ -92,7 +92,9 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .slope-crop {
+    object-fit: cover;
+    object-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 250px 100%);
   }
 }
