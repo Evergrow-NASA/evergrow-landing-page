@@ -7,7 +7,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title, ref }) => {
   return (
-    <div ref={ref}>
+    <div ref={ref} className="flex-col flex items-center xl:items-start text-center">
       <h2>{title}</h2>
       <svg
         xmlns="http://www.w3.org/2000/svg"

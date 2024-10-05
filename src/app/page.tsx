@@ -30,12 +30,12 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
-      {/* <Problem />
-      <Solution />
+      <Problem />
+      {/* <Solution />
       <Features />
       <Objectives />
-      <CaseStudy /> */}
-      <Download /> 
+      <CaseStudy />
+      <Download />   */}
     </main>
   );
 }
