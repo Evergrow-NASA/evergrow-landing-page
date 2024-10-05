@@ -17,13 +17,13 @@ function Hero() {
       <div
         data-scroll
         data-scroll-speed="0.7"
-        className="flex flex-col ml-40 mt-[12%] relative"
+        className="relative flex flex-col xl:ml-40 top-40 sm:top-1/3 xl:top-auto mt-0 xl:mt-[12%] mx-4 sm:mx-8 xl:mx-0 items-center xl:items-start text-center xl:text-left"
       >
-        <p className="headline w-[52rem]">Lorem ipsum dolor sit amet.</p>
-        <p className="subheadline w-[40rem] mt-6 mb-12">
+        <p className="headline lg:w-[52rem]">Lorem ipsum dolor sit amet.</p>
+        <p className="subheadline w-[40rem] mt-6 hidden lg:flex">
           Tackle water-related challenges using NASA's advanced satellite data.
         </p>
-        <Button text="Learn More" style="PRIMARY" />
+        <Button className="mt-12" text="Learn More" style="PRIMARY" />
       </div>
     </div>
   );

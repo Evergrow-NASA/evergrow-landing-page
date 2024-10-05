@@ -1,8 +1,13 @@
 "use client";
 
+import CaseStudy from "@/components/sections/CaseStudy";
+import Download from "@/components/sections/Download";
+import Features from "@/components/sections/Features";
 import Hero from "@/components/sections/Hero";
-import ProblemContext from "@/components/sections/ProblemContext";
-import { useEffect, useRef } from "react";
+import Objectives from "@/components/sections/Objectives";
+import Problem from "@/components/sections/Problem";
+import Solution from "@/components/sections/Solution";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -25,7 +30,12 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
-      <ProblemContext />
+      {/* <Problem />
+      <Solution />
+      <Features />
+      <Objectives />
+      <CaseStudy /> */}
+      <Download /> 
     </main>
   );
 }

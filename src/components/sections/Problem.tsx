@@ -4,7 +4,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const ProblemContext = () => {
+const Problem = () => {
   const headerRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -71,4 +71,4 @@ const ProblemContext = () => {
   );
 };
 
-export default ProblemContext;
+export default Problem;
