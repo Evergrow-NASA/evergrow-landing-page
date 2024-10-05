@@ -116,12 +116,12 @@ body {
     }
   }
 
-  /* .leaf-crop-right {
+  .leaf-crop-left {
     border-radius: 0 100px 0 100px;
   }
-  .leaf-crop-left {
+  .leaf-crop-right {
     border-radius: 100px 0 100px 0;
-  } */
+  }
 
   .phone-frame {
     width: 175px;

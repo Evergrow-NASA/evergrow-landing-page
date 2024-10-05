@@ -1,16 +1,26 @@
 import React from "react";
 import Header from "../wrappers/Header";
-import PhoneFrame from "../wrappers/PhoneFrame";
 import Image from "next/image";
 import PlantFrame from "../wrappers/PlantFrame";
+import PhoneFrame from "../wrappers/PhoneFrame";
 
 const Solution = () => {
   return (
-    <div className="rrelative flex flex-col xl:flex-row justify-between w-full h-screen xl:gap-x-40 bg-neutral-white text-primary-black px-[14%] 2xl:px-[18%]">
-      <div className="hidden xl:block mt-[12%]">
-        <PlantFrame imageUrl="/images/PlantNoBg.png" imageAlt="Plant Frame" width={600} height={400}>
-          <PhoneFrame media="/images/VideoScreen.png" type="image" />
-        </PlantFrame>
+    <div className="relative flex flex-col xl:flex-row justify-between w-full h-screen xl:gap-x-20 2xl:gap-x-40 bg-neutral-white text-primary-black px-[6%] 2xl:px-[12%]">
+      <div className="relative hidden xl:block mt-[12%]">
+        <div className="absolute inset-0 flex justify-center items-start mt-12 z-0">
+          <div className="leaf-crop-left bg-secondary-green h-[335px] w-[365px]"></div>
+        </div>
+        <div className="relative flex justify-center items-center">
+          <PlantFrame
+            imageUrl="/images/PlantNoBg.png"
+            imageAlt="Plant Frame"
+            width={600}
+            invertHorizontal={true}
+          >
+            <PhoneFrame media="/images/VideoScreen.png" type="image" />
+          </PlantFrame>
+        </div>
       </div>
       <div className="flex flex-col mt-[12%]">
         <h4 className="mb-5">Lorem Ipsum</h4>
