@@ -12,6 +12,7 @@
   --primary-white: #fff;
   --secondary-green: #acc080;
   --secondary-gray: #c4c4c4;
+  --muted-green: #DAE5DD;
   --hyperlink: #6a826a;
   --hover-primary-green: #5c825c;
   --hover-primary-white: #e1e1dc;
@@ -163,5 +164,9 @@ body {
     @media (min-width: 1280px) {
       border-radius: 2.2rem;
     }
+  }
+
+  .card-shadow {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
   }
 }

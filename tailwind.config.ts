@@ -18,6 +18,7 @@ const config: Config = {
       "primary-white": "var(--primary-white)",
       "secondary-green": "var(--secondary-green)",
       "secondary-gray": "var(--secondary-gray)",
+      "muted-green": "var(--muted-green)",
       "hover-primary-green": "var(--hover-primary-green)",
       "hover-primary-white": "var(--hover-primary-white)",
     },

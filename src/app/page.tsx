@@ -32,8 +32,8 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
-      {/* <Features />
-      <Objectives />
+      <Features />
+      {/* <Objectives />
       <CaseStudy />
       <Download />   */}
     </main>

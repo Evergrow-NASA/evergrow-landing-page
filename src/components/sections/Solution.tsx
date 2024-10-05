@@ -3,10 +3,12 @@ import Header from "../wrappers/Header";
 import Image from "next/image";
 import PlantFrame from "../wrappers/PlantFrame";
 import PhoneFrame from "../wrappers/PhoneFrame";
+import AppleButton from "../buttons/AppleButton";
+import GoogleButton from "../buttons/GoogleButton";
 
 const Solution = () => {
   return (
-    <div className="relative flex flex-col xl:flex-row justify-between w-full xl:h-screen xl:gap-x-20 2xl:gap-x-40 bg-neutral-white text-primary-black px-[6%] 2xl:px-[12%] py-[20%] md:py-[10%] xl:py-0">
+    <div className="relative flex flex-col xl:flex-row justify-between w-full xl:h-screen xl:gap-x-20 2xl:gap-x-40 bg-primary-white text-primary-black px-[6%] 2xl:px-[12%] py-[20%] md:py-[10%] xl:py-0">
       <div className="relative hidden xl:block mt-56">
         <div className="absolute inset-0 flex justify-center mt-8 z-0">
           <div className="leaf-crop-left bg-secondary-green h-[335px] w-[365px]"></div>
@@ -18,7 +20,11 @@ const Solution = () => {
             width={580}
             invertHorizontal={true}
           >
-            <PhoneFrame media="/images/VideoScreen.png" type="image" hasShadow />
+            <PhoneFrame
+              media="/images/VideoScreen.png"
+              type="image"
+              hasShadow
+            />
           </PlantFrame>
         </div>
       </div>
@@ -47,23 +53,17 @@ const Solution = () => {
               width={315}
               invertHorizontal={true}
             >
-              <PhoneFrame media="/images/VideoScreen.png" type="image" hasShadow />
+              <PhoneFrame
+                media="/images/VideoScreen.png"
+                type="image"
+                hasShadow
+              />
             </PlantFrame>
           </div>
         </div>
-        <div className="flex flex-row mx-auto xl:mx-0 xl:justify-start gap-x-10 mt-2">
-          <Image
-            src="/images/AppleStore.png"
-            alt="apple-store"
-            width={150}
-            height={50}
-          />
-          <Image
-            src="/images/GooglePlay.png"
-            alt="google-play"
-            width={150}
-            height={50}
-          />
+        <div className="flex flex-row mx-auto xl:mx-0 xl:justify-start gap-x-2 md:gap-x-10 mt-2">
+          <GoogleButton />
+          <AppleButton />
         </div>
       </div>
     </div>
