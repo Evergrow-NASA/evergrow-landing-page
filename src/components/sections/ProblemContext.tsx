@@ -16,22 +16,23 @@ const ProblemContext = () => {
         trigger: containerRef.current,
         start: "top 80%",
         end: "bottom 20%",
-        markers: true,
+        toggleActions: "restart none restart none",
+        // markers: true,
       },
     });
 
     timeline
       .from(headerRef.current, {
         opacity: 0,
-        y: 50,
-        duration: 2,
+        y: 40,
+        duration: 1.5,
       })
       .to(
         headerRef.current,
         {
           opacity: 1,
           y: 0,
-          duration: 2,
+          duration: 1.5,
         },
         0
       );
