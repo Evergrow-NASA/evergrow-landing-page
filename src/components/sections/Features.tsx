@@ -21,15 +21,18 @@ const Features = () => {
           <FeatureItem icon="/icons/earth.svg" title="Feature 4" />
         </div>
       </div>
-      <div className="hidden xl:block">
+      <div className="relative hidden xl:block">
         <Image
           src="/images/PlantGrowingOnSoil.png"
           alt="PlantGrowingOnSoil"
           width={504}
           height={464}
         />
+        <div className="absolute top-[10.3rem] left-[0.3rem]">
+          <Image src="/images/Dirt.png" alt="Dirt" width={100} height={100} objectPosition="cover" className="rounded-full h-28 w-28"/>
+        </div>
       </div>
-      <div className="block xl:hidden">
+      <div className="xl:hidden">
         <Image src="/images/Plant.png" alt="Plant" width={315} height={315} />
       </div>
     </div>
