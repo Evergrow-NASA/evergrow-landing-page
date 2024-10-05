@@ -2,11 +2,12 @@ import React from "react";
 
 interface HeaderProps {
   title: string;
+  ref?: React.RefObject<HTMLHeadingElement>;
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header: React.FC<HeaderProps> = ({ title, ref }) => {
   return (
-    <div>
+    <div ref={ref}>
       <h2>{title}</h2>
       <svg
         xmlns="http://www.w3.org/2000/svg"
