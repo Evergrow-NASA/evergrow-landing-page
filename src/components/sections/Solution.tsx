@@ -6,23 +6,23 @@ import PhoneFrame from "../wrappers/PhoneFrame";
 
 const Solution = () => {
   return (
-    <div className="relative flex flex-col xl:flex-row justify-between w-full h-screen xl:gap-x-20 2xl:gap-x-40 bg-neutral-white text-primary-black px-[6%] 2xl:px-[12%]">
-      <div className="relative hidden xl:block mt-[12%]">
-        <div className="absolute inset-0 flex justify-center items-start mt-12 z-0">
+    <div className="relative flex flex-col xl:flex-row justify-between w-full xl:h-screen xl:gap-x-20 2xl:gap-x-40 bg-neutral-white text-primary-black px-[6%] 2xl:px-[12%] py-[20%] md:py-[10%] xl:py-0">
+      <div className="relative hidden xl:block mt-56">
+        <div className="absolute inset-0 flex justify-center mt-8 z-0">
           <div className="leaf-crop-left bg-secondary-green h-[335px] w-[365px]"></div>
         </div>
         <div className="relative flex justify-center items-center">
           <PlantFrame
             imageUrl="/images/PlantNoBg.png"
             imageAlt="Plant Frame"
-            width={600}
+            width={580}
             invertHorizontal={true}
           >
-            <PhoneFrame media="/images/VideoScreen.png" type="image" />
+            <PhoneFrame media="/images/VideoScreen.png" type="image" hasShadow />
           </PlantFrame>
         </div>
       </div>
-      <div className="flex flex-col mt-[12%]">
+      <div className="flex flex-col xl:mt-56">
         <h4 className="mb-5">Lorem Ipsum</h4>
         <Header title="Solution Context" />
         <div className="mt-14 w-auto mx-8 sm:mx-auto sm:w-[28rem]">
@@ -36,6 +36,21 @@ const Solution = () => {
           </p>
         </div>
         <p className="hidden xl:block font-bold mt-6">Get the App</p>
+        <div className="relative block xl:hidden pb-24 pt-28">
+          <div className="absolute inset-0 flex justify-center items-center z-0">
+            <div className="leaf-crop-left bg-secondary-green w-[251px] h-[231px]"></div>
+          </div>
+          <div className="relative flex justify-center items-center">
+            <PlantFrame
+              imageUrl="/images/PlantNoBg.png"
+              imageAlt="Plant Frame"
+              width={315}
+              invertHorizontal={true}
+            >
+              <PhoneFrame media="/images/VideoScreen.png" type="image" hasShadow />
+            </PlantFrame>
+          </div>
+        </div>
         <div className="flex flex-row mx-auto xl:mx-0 xl:justify-start gap-x-10 mt-2">
           <Image
             src="/images/AppleStore.png"

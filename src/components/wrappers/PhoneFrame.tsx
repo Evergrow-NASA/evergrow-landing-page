@@ -3,12 +3,17 @@ import React from "react";
 
 interface PhoneFrameProps {
   type: "video" | "image";
-  media: string; 
+  media: string;
+  hasShadow?: boolean;
 }
 
-const PhoneFrame: React.FC<PhoneFrameProps> = ({ type, media }) => {
+const PhoneFrame: React.FC<PhoneFrameProps> = ({ type, media, hasShadow = false }) => {
   return (
-    <div className="relative phone-container">
+    <div
+      className={`relative phone-container ${
+        hasShadow ? "phone-screen-shadow" : ""
+      }`}
+    >
       <Image
         src="/images/Phone.png"
         alt="phone"
@@ -19,7 +24,11 @@ const PhoneFrame: React.FC<PhoneFrameProps> = ({ type, media }) => {
 
       <div className="absolute top-[4px] left-[6px] phone-screen-container">
         {type === "image" ? (
-          <img src={media} alt="phone screen content" className="phone-screen" />
+          <img
+            src={media}
+            alt="phone screen content"
+            className="phone-screen"
+          />
         ) : (
           <video src={media} className="phone-screen" autoPlay loop muted />
         )}

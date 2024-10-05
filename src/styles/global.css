@@ -134,8 +134,8 @@ body {
   }
 
   .phone-screen-container {
-    width: 175px;
-    height: auto;
+    width: 165px;
+    height: 342px;
 
     @media (min-width: 1280px) {
       width: 244px;
@@ -147,17 +147,21 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 2.2rem;
+    border-radius: 1.4rem;
     z-index: 1;
+
+    @media (min-width: 1280px) {
+      border-radius: 2.2rem;
+    }
   }
 
-  /* TODO: test */
   .phone-screen-shadow {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 2.2rem;
+    border-radius: 1.4rem;
+    box-shadow: 0px 25px 48px -12px rgba(17, 24, 39, 0.25);
     z-index: 0;
-    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+
+    @media (min-width: 1280px) {
+      border-radius: 2.2rem;
+    }
   }
 }
