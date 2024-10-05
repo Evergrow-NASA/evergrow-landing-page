@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="hidden md:block fixed z-20 w-full pt-5 px-20">
+    <div className="hidden md:block fixed z-50 w-full pt-5 px-20">
       <p className="bg-primary-green opacity-50 h-20">Reference Navbar</p>
     </div>
   );

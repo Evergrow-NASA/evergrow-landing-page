@@ -99,7 +99,7 @@ body {
   font-family: var(--font-open-sans), Helvetica, sans-serif;
 }
 
-@layer utilities {
+@layer components {
   .slope-crop {
     object-fit: cover;
     object-position: bottom;
@@ -114,5 +114,50 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 250px 100%);
       height: 100vh;
     }
+  }
+
+  /* .leaf-crop-right {
+    border-radius: 0 100px 0 100px;
+  }
+  .leaf-crop-left {
+    border-radius: 100px 0 100px 0;
+  } */
+
+  .phone-frame {
+    width: 175px;
+    height: 351px;
+
+    @media (min-width: 1280px) {
+      width: 255px;
+      height: 509px;
+    }
+  }
+
+  .phone-screen-container {
+    width: 175px;
+    height: auto;
+
+    @media (min-width: 1280px) {
+      width: 244px;
+      height: 500px;
+    }
+  }
+
+  .phone-screen {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.2rem;
+    z-index: 1;
+  }
+
+  /* TODO: test */
+  .phone-screen-shadow {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.2rem;
+    z-index: 0;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
   }
 }

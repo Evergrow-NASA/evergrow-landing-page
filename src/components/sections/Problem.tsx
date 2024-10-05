@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import Header from "../ui/Header";
+import Header from "../wrappers/Header";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
