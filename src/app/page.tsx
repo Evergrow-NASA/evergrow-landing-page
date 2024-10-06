@@ -33,8 +33,8 @@ export default function Home() {
       <Problem />
       <Solution />
       <Features />
-      {/* <Objectives />
-      <CaseStudy />
+      <Objectives />
+      {/* <CaseStudy />
       <Download />   */}
     </main>
   );
