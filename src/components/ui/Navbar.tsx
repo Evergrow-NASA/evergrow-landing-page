@@ -1,8 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Button from "../buttons/Button";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   const [showMenu, setShowMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -23,6 +26,10 @@ const Navbar = () => {
       setShowMenu(false);
     }
   };
+
+  const onClickDownload = () => {
+    router.push("#download");
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -76,12 +83,7 @@ const Navbar = () => {
             <a href="#case_study" className="underline-offset-4 font-light">
               Case Study
             </a>
-            <a
-              href="#"
-              className="white bg-primary-green px-9 py-3 rounded-full hover:bg-[#528566] transition-colors hover:no-underline"
-            >
-              Download
-            </a>
+            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
           </div>
 
           {/* Hamburger menu for mobile devices */}
@@ -148,12 +150,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="py-4">
-            <a
-              href="#"
-              className="white bg-primary-green px-9 py-3 rounded-full hover:no-underline"
-            >
-              Download
-            </a>
+            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
           </li>
         </ul>
       </div>

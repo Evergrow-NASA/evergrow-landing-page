@@ -41,6 +41,7 @@ const CaseStudy = () => {
 
   return (
     <div
+      id="case_study"
       ref={containerRef}
       className="flex flex-col xl:flex-row justify-between w-full xl:h-screen xl:gap-x-40"
     >
@@ -52,14 +53,14 @@ const CaseStudy = () => {
         <Header title="Satellite Innovation" />
         <div className="mt-14 w-auto mx-8 sm:mx-auto sm:w-[30rem]">
           <p className="mb-4">
-            The use of satellite technology in Peru, led by the UK Space Agency
-            and in collaboration with Peru’s Ministry of Agricultural
-            Development and Irrigation (MIDAGRI), improved accuracy in rice
+            The use of satellite technology in Peru, led by the <span className="font-bold">UK Space Agency </span>
+            and in collaboration with <span className="font-bold">Peru’s Ministry of Agricultural
+            Development and Irrigation (MIDAGRI)</span>, improved accuracy in rice
             production by providing real-time data, optimizing resources and
             crop management.
           </p>
         </div>
-        <a className="mx-auto xl:mx-0 text-xl mt-6" href="#">
+        <a className="mx-auto xl:mx-0 text-xl mt-6" href="/caseStudy">
           Continue Reading
         </a>
       </div>

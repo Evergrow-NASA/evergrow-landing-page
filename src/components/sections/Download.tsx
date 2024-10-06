@@ -6,7 +6,7 @@ import AppleButton from "../buttons/AppleButton";
 
 const Download = () => {
   return (
-    <div className="relative w-full h-screen astronaut-bg">
+    <div id="download" className="relative w-full h-screen astronaut-bg">
       <div className="flex flex-col xl:flex-row justify-evenly items-center xl:gap-x-20 h-full">
         <div className="grid xl:grid-cols-2 gap-x-10 h-full">
           <PhoneFrame
@@ -24,7 +24,7 @@ const Download = () => {
           <h4 className="mb-5">What are you waiting for?</h4>
           <Header className="mb-16" title="Try It Yourself" />
           <p className="mb-4 mx-4 md:mx-0">
-            Experience the power of Evergrow’s real-time data—get started in
+            Experience the power of <span className="evergrow-text">Evergrow</span>’s real-time data—get started in
             seconds!
           </p>
           <p className="hidden xl:block font-bold mt-6">Get the App</p>
