@@ -6,6 +6,7 @@ import Problematic from "@/components/sections/problemContext/Problematic";
 import Sustainability from "@/components/sections/problemContext/Sustainability";
 import Technology from "@/components/sections/problemContext/Technology";
 import AltNavbar from "@/components/ui/AltNavbar";
+import Footer from "@/components/ui/Footer";
 import React, { useEffect } from "react";
 
 const ProblemContextPage = () => {
@@ -33,6 +34,7 @@ const ProblemContextPage = () => {
       <Technology/>
       <Conclusions />
       <Sustainability />
+      <Footer />
     </main>
   );
 };

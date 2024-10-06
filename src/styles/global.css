@@ -189,4 +189,12 @@ body {
     font-weight: 700;
     font-style: italic;
   }
+
+  .starry-bg {
+    background: url('/images/Starry.jpg');
+    background-size: cover;
+    width: 100vw;
+    background-position: center;
+    object-position: top center;
+  }
 }

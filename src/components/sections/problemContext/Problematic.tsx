@@ -143,36 +143,39 @@ const Problematic = () => {
           </div>
         }
       />
-      <Article
-        title="Climate Uncertainty and Challenges for Smallholder Farmers"
-        image="/images/Potato.png"
-        isFlipped
-        columnContent={
-          <div>
-            <p>
-              According to{" "}
-              <a href="https://www.fao.org/newsroom/detail/Small-family-farmers-produce-a-third-of-the-world-s-food/en">
-                FAO (2018)
-              </a>
-              , <b>80%</b> of the world's farms are small, and these
-              smallholders are responsible for producing{" "}
-              <b>35% of the global food supply</b>. However, they are among the
-              most <b>vulnerable</b> due to limited access to accurate climate{" "}
-              <b>technologies</b> and <b>data</b>.
-            </p>
-            <p className="mt-8">
-              Climate uncertainty affects not only crop yields but also{" "}
-              <b>food prices</b> and farmers' incomes. This volatility has
-              exacerbated food insecurity, particularly in regions heavily
-              dependent on subsistence agriculture{" "}
-              <a href="https://openknowledge.fao.org/server/api/core/bitstreams/30c0d98d-1c21-48ef-b5d9-8d988e6fa6f2/content">
-                (FAO, 2021)
-              </a>
-              .
-            </p>
-          </div>
-        }
-      />
+      <div>
+        <h4>Climate Uncertainty and</h4>
+        <Article
+          title="Challenges for Smallholder Farmers"
+          image="/images/Potato.png"
+          isFlipped
+          columnContent={
+            <div>
+              <p>
+                According to{" "}
+                <a href="https://www.fao.org/newsroom/detail/Small-family-farmers-produce-a-third-of-the-world-s-food/en">
+                  FAO (2018)
+                </a>
+                , <b>80%</b> of the world's farms are small, and these
+                smallholders are responsible for producing{" "}
+                <b>35% of the global food supply</b>. However, they are among
+                the most <b>vulnerable</b> due to limited access to accurate
+                climate <b>technologies</b> and <b>data</b>.
+              </p>
+              <p className="mt-8">
+                Climate uncertainty affects not only crop yields but also{" "}
+                <b>food prices</b> and farmers' incomes. This volatility has
+                exacerbated food insecurity, particularly in regions heavily
+                dependent on subsistence agriculture{" "}
+                <a href="https://openknowledge.fao.org/server/api/core/bitstreams/30c0d98d-1c21-48ef-b5d9-8d988e6fa6f2/content">
+                  (FAO, 2021)
+                </a>
+                .
+              </p>
+            </div>
+          }
+        />
+      </div>
     </div>
   );
 };
