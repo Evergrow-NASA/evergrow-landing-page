@@ -53,7 +53,7 @@ const Navbar = () => {
             <Image
               width={40}
               height={49.27}
-              src="/images/EvergrowLogo.svg"
+              src="/icons/EvergrowLogo.svg"
               alt="Evergrow Logo"
             />
             Evergrow
