@@ -1,42 +1,13 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Header from "../wrappers/Header";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGsapOpacity } from "@/hooks/useGsapOpacity";
 
 const Problem = () => {
-  const headerRef = useRef(null);
+  const divRef = useRef(null);
   const containerRef = useRef(null);
 
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "restart none restart none",
-        // markers: true,
-      },
-    });
-
-    timeline
-      .from(headerRef.current, {
-        opacity: 0,
-        y: 40,
-        duration: 1.5,
-      })
-      .to(
-        headerRef.current,
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.5,
-        },
-        0
-      );
-  }, []);
+  useGsapOpacity(containerRef, divRef);
 
   return (
     <div
@@ -45,7 +16,7 @@ const Problem = () => {
       id="context"
     >
       <div
-        ref={headerRef}
+        ref={divRef}
         className="flex flex-col py-10 sm:py-0 xl:ml-[6%] 3xl:ml-[4%] xl:mt-[12%] justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto"
       >
         <h4 className="mb-5">Problem Context</h4>

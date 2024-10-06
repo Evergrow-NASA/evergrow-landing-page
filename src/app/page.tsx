@@ -17,7 +17,6 @@ export default function Home() {
     const initializeScroll = async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       locomotiveScroll = new LocomotiveScroll();
-      console.log("LocomotiveScroll initialized:", locomotiveScroll);
     };
 
     initializeScroll();

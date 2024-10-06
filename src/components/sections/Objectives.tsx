@@ -44,6 +44,7 @@ const Objectives = () => {
           alt="Grandma"
           width={504}
           height={464}
+          data-scroll data-scroll-speed="0.3"
         />
       </div>
       <div className="flex flex-col-reverse xl:flex-row justify-evenly items-center xl:gap-x-20 h-full">
@@ -52,6 +53,7 @@ const Objectives = () => {
           alt="Grandma"
           width={504}
           height={464}
+          data-scroll data-scroll-speed="0.2"
         />
         <div className="flex flex-col justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto max-w-[28rem] mb-8 xl:mb-0">
           <div className="relative flex flex-col gap-y-8">
