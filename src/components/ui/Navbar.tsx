@@ -50,7 +50,7 @@ const Navbar = () => {
       }}
     >
       {/* Navbar (Logo y enlaces) */}
-      <nav className="px-6 md:px-10 py-6">
+      <nav className="px-6 md:px-10 py-6 backdrop-blur-sm">
         <div className="mx-auto flex justify-between items-center">
           {/* Logo */}
           <a
