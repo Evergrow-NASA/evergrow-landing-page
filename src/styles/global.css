@@ -103,7 +103,7 @@ body {
 @layer components {
   .slope-crop {
     object-fit: cover;
-    object-position: bottom;
+    object-position: bottom left;
     width: 100vw;
     height: 400px;
 

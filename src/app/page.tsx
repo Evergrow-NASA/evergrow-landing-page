@@ -34,8 +34,8 @@ export default function Home() {
       <Solution />
       <Features />
       <Objectives />
-      {/* <CaseStudy />
-      <Download />   */}
+      <CaseStudy />
+      {/* <Download />   */}
     </main>
   );
 }
