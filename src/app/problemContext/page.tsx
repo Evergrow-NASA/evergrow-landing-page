@@ -1,8 +1,10 @@
 "use client";
 
+import Conclusions from "@/components/sections/problemContext/Conclusions";
 import Hero from "@/components/sections/problemContext/Hero";
 import Problematic from "@/components/sections/problemContext/Problematic";
 import Sustainability from "@/components/sections/problemContext/Sustainability";
+import Technology from "@/components/sections/problemContext/Technology";
 import AltNavbar from "@/components/ui/AltNavbar";
 import React, { useEffect } from "react";
 
@@ -28,6 +30,8 @@ const ProblemContextPage = () => {
       <AltNavbar />
       <Hero />
       <Problematic />
+      <Technology/>
+      <Conclusions />
       <Sustainability />
     </main>
   );
