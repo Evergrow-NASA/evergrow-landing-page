@@ -26,7 +26,7 @@ function Hero() {
         data-scroll-speed="0.7"
         className="relative flex flex-col xl:ml-40 top-1/3 xl:top-auto mt-0 xl:mt-[12%] mx-4 sm:mx-8 xl:mx-0 items-center xl:items-start text-center xl:text-left"
       >
-        <p className="headline lg:w-[48rem]">Cultivate Success, Cut Risks</p>
+        <p className="headline lg:w-[42rem]">Cut Risks, Cultivate Success</p>
         <p className="subheadline w-[40rem] mt-6 hidden lg:flex">
           With real-time satellite data, our mobile app helps you optimize
           decisions to reduce risks and boost crop yields.
