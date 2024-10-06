@@ -5,7 +5,10 @@ import ObjectiveItem from "../ui/ObjectiveItem";
 
 const Objectives = () => {
   return (
-    <div id="objectives" className="flex flex-col py-[12%] w-full bg-primary-white text-primary-black gap-y-4 xl:gap-y-20 px-4">
+    <div
+      id="objectives"
+      className="flex flex-col py-[12%] w-full bg-primary-white text-primary-black gap-y-4 xl:gap-y-20 px-4"
+    >
       <div className="flex flex-col xl:flex-row justify-evenly items-center xl:gap-x-20 h-full">
         <div className="flex flex-col justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto max-w-[28rem] mb-8 xl:mb-0">
           <h4 className="mb-5">Based on SDGs</h4>
@@ -44,7 +47,8 @@ const Objectives = () => {
           alt="Grandma"
           width={504}
           height={464}
-          data-scroll data-scroll-speed="0.3"
+          data-scroll
+          data-scroll-speed="0.3"
         />
       </div>
       <div className="flex flex-col-reverse xl:flex-row justify-evenly items-center xl:gap-x-20 h-full">
@@ -53,7 +57,8 @@ const Objectives = () => {
           alt="Grandma"
           width={504}
           height={464}
-          data-scroll data-scroll-speed="0.2"
+          data-scroll
+          data-scroll-speed="0.2"
         />
         <div className="flex flex-col justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto max-w-[28rem] mb-8 xl:mb-0">
           <div className="relative flex flex-col gap-y-8">
@@ -67,6 +72,9 @@ const Objectives = () => {
               title="Climate Resilience"
               description={`Equip farmers with real-time <span class="font-bold">weather insights</span> to adapt to changing climate conditions and protect crops.`}
             />
+            <a className="mx-auto text-xl mt-6" href="/objectives">
+              Learn How We Support SDGs
+            </a>
             <div className="absolute top-[3.75rem] left-5">
               <svg
                 width="1"

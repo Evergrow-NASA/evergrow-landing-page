@@ -3,7 +3,6 @@
 import Conclusions from "@/components/sections/problemContext/Conclusions";
 import Hero from "@/components/sections/problemContext/Hero";
 import Problematic from "@/components/sections/problemContext/Problematic";
-import Sustainability from "@/components/sections/problemContext/Sustainability";
 import Technology from "@/components/sections/problemContext/Technology";
 import AltNavbar from "@/components/ui/AltNavbar";
 import Footer from "@/components/ui/Footer";
@@ -33,7 +32,6 @@ const ProblemContextPage = () => {
       <Problematic />
       <Technology/>
       <Conclusions />
-      <Sustainability />
       <Footer />
     </main>
   );
