@@ -5,10 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const useGsapOpacity = (
-  triggerRef: RefObject<HTMLElement>, 
-  targetRef: RefObject<HTMLElement>, 
-  start: string = "top 80%", 
-  end: string = "bottom 20%", 
+  triggerRef: RefObject<HTMLElement>,
+  targetRef: RefObject<HTMLElement>,
+  start: string = "top 80%",
+  end: string = "bottom 20%",
   toggleActions: string = "restart none restart none"
 ): void => {
   useLayoutEffect(() => {
