@@ -5,14 +5,20 @@ interface PhoneFrameProps {
   type: "video" | "image";
   media: string;
   hasShadow?: boolean;
+  className?: string;
 }
 
-const PhoneFrame: React.FC<PhoneFrameProps> = ({ type, media, hasShadow = false }) => {
+const PhoneFrame: React.FC<PhoneFrameProps> = ({
+  type,
+  media,
+  hasShadow = false,
+  className,
+}) => {
   return (
     <div
       className={`relative phone-container ${
         hasShadow ? "phone-screen-shadow" : ""
-      }`}
+      } ${className}`}
     >
       <Image
         src="/images/Phone.png"
@@ -22,7 +28,7 @@ const PhoneFrame: React.FC<PhoneFrameProps> = ({ type, media, hasShadow = false 
         height={500}
       />
 
-      <div className="absolute top-[4px] left-[6px] phone-screen-container">
+      <div className="absolute top-1/2 transform -translate-y-1/2 ml-1.5 phone-screen-container">
         {type === "image" ? (
           <img
             src={media}

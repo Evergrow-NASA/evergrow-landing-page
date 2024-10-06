@@ -35,7 +35,7 @@ export default function Home() {
       <Features />
       <Objectives />
       <CaseStudy />
-      {/* <Download />   */}
+      <Download />
     </main>
   );
 }
