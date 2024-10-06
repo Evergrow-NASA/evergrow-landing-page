@@ -29,7 +29,7 @@ const Navbar = () => {
 
   const onClickDownload = () => {
     router.push("#download");
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="navbar-wrapper fixed top-0 w-full z-50 transition-all duration-300 ease-in-out" // Contenedor que engloba todo y anima el fondo
+      className="navbar-wrapper fixed top-0 w-full z-50 transition-all duration-300 ease-in-out backdrop-blur-[3px]"
       style={{
         backgroundColor: showMenu || scrolling ? "#0c0c20" : "transparent",
       }}
@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className="mx-auto flex justify-between items-center">
           {/* Logo */}
           <a
-            className="flex items-center md:text-4xl text-2xl italic gap-x-4 hover:no-underline"
+            className="flex items-center md:text-4xl text-2xl italic gap-x-4 hover:no-underline font-bold"
             href="/"
           >
             <Image
@@ -83,7 +83,11 @@ const Navbar = () => {
             <a href="#case_study" className="underline-offset-4 font-light">
               Case Study
             </a>
-            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
+            <Button
+              text={"Download"}
+              style={"DOWNLOAD"}
+              onClick={onClickDownload}
+            />
           </div>
 
           {/* Hamburger menu for mobile devices */}
@@ -150,7 +154,11 @@ const Navbar = () => {
             </a>
           </li>
           <li className="py-4">
-            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
+            <Button
+              text={"Download"}
+              style={"DOWNLOAD"}
+              onClick={onClickDownload}
+            />
           </li>
         </ul>
       </div>
