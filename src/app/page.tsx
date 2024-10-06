@@ -8,6 +8,7 @@ import Objectives from "@/components/sections/Objectives";
 import Problem from "@/components/sections/Problem";
 import Solution from "@/components/sections/Solution";
 import Footer from "@/components/ui/Footer";
+import Navbar from "@/components/ui/Navbar";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col">
+      <Navbar />
       <Hero />
       <Problem />
       <Solution />
