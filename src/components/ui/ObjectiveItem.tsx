@@ -19,7 +19,7 @@ const ObjectiveItem: React.FC<ObjectiveItemProps> = ({
         </div>
         <div>{title}</div>
       </div>
-      <p className="mt-8 ml-[3.25rem]">{description}</p>
+      <p className="mt-8 xl:ml-[3.25rem]">{description}</p>
     </div>
   );
 };

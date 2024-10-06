@@ -5,30 +5,84 @@ import ObjectiveItem from "../ui/ObjectiveItem";
 
 const Objectives = () => {
   return (
-    <div className="flex flex-col py-[12%] xl:py-0 w-full xl:h-screen bg-primary-white text-primary-black">
+    <div className="flex flex-col py-[12%] w-full bg-primary-white text-primary-black gap-y-4 xl:gap-y-20 px-4">
       <div className="flex flex-col xl:flex-row justify-evenly items-center xl:gap-x-20 h-full">
-        <div className="flex flex-col justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto max-w-[32.8rem]">
+        <div className="flex flex-col justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto max-w-[28rem] mb-8 xl:mb-0">
           <h4 className="mb-5">Lorem Ipsum</h4>
           <Header className="mb-16" title="Our Objectives" />
-          <div className="flex flex-col gap-y-8">
+          <div className="relative flex flex-col gap-y-8">
             <ObjectiveItem
               number={1}
-              title="Real-time insights"
-              description="Provide accurate, real-time weather information using NASA satellite data to assist farmers in their daily decisions."
+              title="Food Security"
+              description="Provide real-time satellite data to help farmers boost productivity and ensure stable food supply."
             />
             <ObjectiveItem
               number={2}
-              title="Swift decisions"
-              description="Facilitate quick decisions on water management, crop protection and resource optimization."
+              title="Water Efficiency"
+              description="Optimize water use through precise climate data, reducing waste and enhancing irrigation."
             />
+            <div className="absolute top-[3.75rem] left-5">
+              <svg
+                className="hidden xl:block"
+                width="1"
+                height="110"
+                viewBox="0 0 1 110"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 0L0.500005 110"
+                  stroke="#0C0C20"
+                  stroke-dasharray="4 4"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-          <Image
-            src="/images/Grandma.png"
-            alt="Grandma"
-            width={504}
-            height={464}
-          />
+        <Image
+          src="/images/Grandma.png"
+          alt="Grandma"
+          width={504}
+          height={464}
+        />
+      </div>
+      <div className="flex flex-col-reverse xl:flex-row justify-evenly items-center xl:gap-x-20 h-full">
+        <Image
+          src="/images/SateliteSpace.png"
+          alt="Grandma"
+          width={504}
+          height={464}
+        />
+        <div className="flex flex-col justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto max-w-[28rem] mb-8 xl:mb-0">
+          <div className="relative flex flex-col gap-y-8">
+            <ObjectiveItem
+              number={3}
+              title="Agricultural Innovation"
+              description="Integrate NASA satellite data into farming practices, promoting sustainable and tech-driven agriculture."
+            />
+            <ObjectiveItem
+              number={4}
+              title="Climate Resilience"
+              description="Equip farmers with real-time weather insights to adapt to changing climate conditions and protect crops."
+            />
+            <div className="absolute top-[3.75rem] left-5">
+              <svg
+                width="1"
+                height="110"
+                viewBox="0 0 1 110"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="hidden xl:block"
+              >
+                <path
+                  d="M0.5 0L0.500005 110"
+                  stroke="#0C0C20"
+                  stroke-dasharray="4 4"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
