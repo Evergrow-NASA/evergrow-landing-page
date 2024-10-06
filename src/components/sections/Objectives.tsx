@@ -33,7 +33,7 @@ const Objectives = () => {
                 <path
                   d="M0.5 0L0.500005 110"
                   stroke="#0C0C20"
-                  stroke-dasharray="4 4"
+                  strokeDasharray="4 4"
                 />
               </svg>
             </div>
@@ -77,7 +77,7 @@ const Objectives = () => {
                 <path
                   d="M0.5 0L0.500005 110"
                   stroke="#0C0C20"
-                  stroke-dasharray="4 4"
+                  strokeDasharray="4 4"
                 />
               </svg>
             </div>

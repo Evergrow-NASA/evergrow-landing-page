@@ -42,11 +42,11 @@ const CaseStudy = () => {
   return (
     <div
       ref={containerRef}
-      className="relative flex flex-col xl:flex-row justify-between w-full h-screen xl:gap-x-20"
+      className="flex flex-col xl:flex-row justify-between w-full xl:h-screen xl:gap-x-40"
     >
       <div
         ref={headerRef}
-        className="flex flex-col py-10 sm:py-0 xl:ml-[6%] 3xl:ml-[4%] xl:mt-[12%] justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto"
+        className="flex flex-col py-20 xl:py-0 xl:ml-[6%] 3xl:ml-[4%] xl:mt-[12%] justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto"
       >
         <h4 className="mb-5">Case Study</h4>
         <Header title="Satellite Innovation" />
@@ -63,14 +63,30 @@ const CaseStudy = () => {
           Continue Reading
         </a>
       </div>
-      <div>
+      <div className="relative">
         <Image
           src="/images/DetectionField.png"
-          alt="crops"
-          className="slope-crop"
+          alt="detection field"
+          className="slope-crop hidden xl:block"
           width={1000}
           height={500}
         />
+        <Image
+          src="/images/Field.png"
+          alt="detection"
+          className="block xl:hidden crop-cover"
+          width={1000}
+          height={500}
+        />
+        <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 xl:-translate-y-0 -translate-x-1/2 xl:-translate-x-0 xl:left-[-6rem] xl:top-36">
+          <Image
+            src="/images/Satelite.png"
+            alt="satellite"
+            className="w-[319px] auto xl:w-[206px] xl:h-[207px]"
+            width={206}
+            height={207}
+          />
+        </div>
       </div>
     </div>
   );
