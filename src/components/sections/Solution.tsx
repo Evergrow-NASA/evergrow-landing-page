@@ -33,8 +33,8 @@ const Solution = () => {
           />
           <div className="absolute top-1/2 transform -translate-y-1/2 mt-8">
             <PhoneFrame
-              media="/images/VideoScreen.png"
-              type="image"
+              media="/videos/AppShowcase.mp4"
+              type="video"
               hasShadow
             />
           </div>
@@ -72,8 +72,8 @@ const Solution = () => {
             />
             <div className="absolute top-1/2 transform -translate-y-1/2">
               <PhoneFrame
-                media="/images/VideoScreen.png"
-                type="image"
+                media="/videos/AppShowcase.mp4"
+                type="video"
                 hasShadow
               />
             </div>
