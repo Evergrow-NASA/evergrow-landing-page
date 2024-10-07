@@ -49,7 +49,7 @@ const CaseStudy = () => {
           loading="lazy"
         />
         <Image
-          src="/images/Field.png"
+          src="/images/Field.webp"
           alt="detection"
           className="block xl:hidden crop-cover"
           width={1000}

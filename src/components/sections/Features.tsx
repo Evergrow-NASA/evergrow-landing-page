@@ -85,7 +85,7 @@ const Features = () => {
         />
         <div className="absolute top-[12.2rem] left-[2.3rem]">
           <Image
-            src="/images/Dirt.jpg"
+            src="/images/Dirt.webp"
             alt="Dirt"
             width={100}
             height={100}

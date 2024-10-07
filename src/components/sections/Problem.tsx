@@ -41,7 +41,7 @@ const Problem = () => {
       </div>
       <div>
         <Image
-          src="/images/Weather.jpg"
+          src="/images/Weather.webp"
           alt="crops"
           className="slope-crop"
           loading="lazy"
