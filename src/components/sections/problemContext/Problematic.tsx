@@ -1,9 +1,12 @@
-import React from "react";
+import React, { Suspense, useRef } from "react";
 import Article from "./Article";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Desert } from "./desert/Desert";
+import { OrbitControls } from "@react-three/drei";
 
 const Problematic = () => {
   return (
-    <div className="flex flex-col px-8 md:px-40 xl:px-60 py-20 bg-primary-white text-primary-black gap-y-20">
+    <div className="flex flex-col w-full px-8 md:px-40 xl:px-60 py-20 bg-primary-white text-primary-black gap-y-20">
       <Article
         title="Global Context: The Climate Problem and Agriculture"
         image="/images/Sunrise.webp"
@@ -143,6 +146,35 @@ const Problematic = () => {
           </div>
         }
       />
+
+      <div className="relative w-full">
+        <div className="z-40 h-[200px] xl:h-[400px] w-1/2 pointer-events-none mx-auto">
+          <Canvas
+            camera={{ position: [0, 5, 15], fov: 50 }}
+            style={{ backgroundColor: "transparent" }}
+          >
+            {/* Luz ambiental y direccional */}
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[10, 10, 10]} intensity={1.5} />
+
+            {/* Modelo Desert con rotación en su eje */}
+            <Suspense fallback={null}>
+              <RotatingDesert />
+            </Suspense>
+
+            {/* Controles de cámara para Desert */}
+            <OrbitControls
+              enableZoom={true}
+              enablePan={true}
+              enableRotate={true} // Permitir rotar el modelo Desert
+              enableDamping={true}
+              dampingFactor={0.1}
+              rotateSpeed={0.5}
+            />
+          </Canvas>
+        </div>
+      </div>
+
       <div>
         <h4>Climate Uncertainty and</h4>
         <Article
@@ -179,5 +211,19 @@ const Problematic = () => {
     </div>
   );
 };
+
+function RotatingDesert() {
+  const desertRef = useRef<any>();
+
+  // Rotar el modelo Desert en su propio eje
+  useFrame(() => {
+    if (desertRef.current) {
+      desertRef.current.rotation.y += 0.01; // Rotación automática
+      desertRef.current.scale.set(6, 6, 6);
+    }
+  });
+
+  return <Desert ref={desertRef} scale={6} position={[0, -1, 0]} />;
+}
 
 export default Problematic;
