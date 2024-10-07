@@ -29,7 +29,7 @@ const AltNavbar = () => {
 
   const onClickDownload = () => {
     router.push("/#download");
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -62,13 +62,18 @@ const AltNavbar = () => {
               height={49.27}
               src="/icons/EvergrowLogo.svg"
               alt="Evergrow Logo"
+              loading="lazy"
             />
             Evergrow
           </a>
 
           {/* Navigation links */}
           <div className="hidden xl:flex space-x-16 items-center">
-            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
+            <Button
+              text={"Download"}
+              style={"DOWNLOAD"}
+              onClick={onClickDownload}
+            />
           </div>
 
           {/* Hamburger menu for mobile devices */}
@@ -110,7 +115,11 @@ const AltNavbar = () => {
       >
         <ul className="text-right ml-auto">
           <li>
-            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
+            <Button
+              text={"Download"}
+              style={"DOWNLOAD"}
+              onClick={onClickDownload}
+            />
           </li>
         </ul>
       </div>

@@ -191,7 +191,7 @@ body {
   }
 
   .starry-bg {
-    background: url('/images/Starry.jpg');
+    background: url('/images/Starry.webp');
     background-size: cover;
     width: 100vw;
     background-position: center;

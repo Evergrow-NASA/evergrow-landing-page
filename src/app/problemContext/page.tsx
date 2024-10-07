@@ -9,6 +9,7 @@ import Footer from "@/components/ui/Footer";
 import React, { useEffect } from "react";
 
 const ProblemContextPage = () => {
+  /*
   useEffect(() => {
     let locomotiveScroll: any;
 
@@ -24,13 +25,13 @@ const ProblemContextPage = () => {
       if (locomotiveScroll) locomotiveScroll.destroy();
     };
   }, []);
-
+*/
   return (
     <main className="flex flex-col">
       <AltNavbar />
       <Hero />
       <Problematic />
-      <Technology/>
+      <Technology />
       <Conclusions />
       <Footer />
     </main>

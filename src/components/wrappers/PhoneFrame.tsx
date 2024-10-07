@@ -26,6 +26,7 @@ const PhoneFrame: React.FC<PhoneFrameProps> = ({
         className="phone-frame"
         width={255}
         height={500}
+        loading="lazy"
       />
 
       <div className="absolute top-1/2 transform -translate-y-1/2 ml-1.5 phone-screen-container">

@@ -34,6 +34,7 @@ const Article: React.FC<ArticleProps> = ({
             className="leaf-crop-right h-[200px] sm:h-[300px] xl:h-[437px] w-[899px] xl:w-auto mb-4"
             width={400}
             height={300}
+            loading="lazy"
           />
           <p className="w-[400px] text-[16px]">{imageDescription}</p>
         </div>

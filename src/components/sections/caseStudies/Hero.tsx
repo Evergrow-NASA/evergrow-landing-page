@@ -9,7 +9,7 @@ function Hero() {
           src="/images/CaseStudies.png"
           alt="hero"
           fill={true}
-          priority={true}
+          loading="lazy"
           style={{ objectFit: "cover", opacity: 0.7 }}
         />
       </div>

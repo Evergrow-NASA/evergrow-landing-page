@@ -29,6 +29,7 @@ const Solution = () => {
             className="mr-10"
             data-scroll
             data-scroll-speed="-.1"
+            loading="lazy"
           />
           <div className="absolute top-1/2 transform -translate-y-1/2 mt-8">
             <PhoneFrame
@@ -67,6 +68,7 @@ const Solution = () => {
               className="mr-7"
               data-scroll
               data-scroll-speed="-.1"
+              loading="lazy"
             />
             <div className="absolute top-1/2 transform -translate-y-1/2">
               <PhoneFrame

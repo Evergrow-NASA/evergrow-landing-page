@@ -44,6 +44,7 @@ const Problem = () => {
           src="/images/Weather.jpg"
           alt="crops"
           className="slope-crop"
+          loading="lazy"
           width={1000}
           height={500}
         />

@@ -24,11 +24,15 @@ const CaseStudy = () => {
         <Header title="Satellite Innovation" />
         <div className="mt-14 w-auto mx-8 sm:mx-auto sm:w-[30rem]">
           <p className="mb-4">
-            The use of satellite technology in Peru, led by the <span className="font-bold">UK Space Agency </span>
-            and in collaboration with <span className="font-bold">Peru’s Ministry of Agricultural
-            Development and Irrigation (MIDAGRI)</span>, improved accuracy in rice
-            production by providing real-time data, optimizing resources and
-            crop management.
+            The use of satellite technology in Peru, led by the{" "}
+            <span className="font-bold">UK Space Agency </span>
+            and in collaboration with{" "}
+            <span className="font-bold">
+              Peru’s Ministry of Agricultural Development and Irrigation
+              (MIDAGRI)
+            </span>
+            , improved accuracy in rice production by providing real-time data,
+            optimizing resources and crop management.
           </p>
         </div>
         <a className="mx-auto xl:mx-0 text-xl mt-6" href="/caseStudy">
@@ -42,6 +46,7 @@ const CaseStudy = () => {
           className="slope-crop hidden xl:block"
           width={1000}
           height={500}
+          loading="lazy"
         />
         <Image
           src="/images/Field.png"
@@ -49,6 +54,7 @@ const CaseStudy = () => {
           className="block xl:hidden crop-cover"
           width={1000}
           height={500}
+          loading="lazy"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 xl:-translate-y-0 -translate-x-1/2 xl:-translate-x-0 xl:left-[-6rem] xl:top-36">
           <Image
@@ -57,6 +63,7 @@ const CaseStudy = () => {
             className="w-[319px] auto xl:w-[206px] xl:h-[207px]"
             width={206}
             height={207}
+            loading="lazy"
           />
         </div>
       </div>

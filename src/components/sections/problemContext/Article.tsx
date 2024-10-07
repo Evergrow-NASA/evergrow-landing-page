@@ -20,7 +20,9 @@ const Article: React.FC<ArticleProps> = ({
   return (
     <div>
       <Header className="text-center xl:text-left" title={title} />
-      <div className={`grid grid-cols-1 xl:grid-cols-2 gap-x-14 xl:gap-x-20 mt-12 text-justify`}>
+      <div
+        className={`grid grid-cols-1 xl:grid-cols-2 gap-x-14 xl:gap-x-20 mt-12 text-justify`}
+      >
         {isFlipped ? (
           <>
             <Image
@@ -29,6 +31,7 @@ const Article: React.FC<ArticleProps> = ({
               className="leaf-crop-right h-[200px] sm:h-[300px] xl:h-[360px] w-[400px] xl:w-auto mx-auto"
               width={400}
               height={300}
+              loading="lazy"
             />
             <div className="mt-8 xl:mt-0">{columnContent}</div>
           </>
@@ -41,6 +44,7 @@ const Article: React.FC<ArticleProps> = ({
               className="leaf-crop-left h-[200px] sm:h-[300px] xl:h-[360px] w-[400px] xl:w-auto mx-auto"
               width={400}
               height={300}
+              loading="lazy"
             />
           </>
         )}

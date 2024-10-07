@@ -13,11 +13,16 @@ const Footer = () => {
           height={49.27}
           src="/icons/EvergrowLogo.svg"
           alt="Evergrow Logo"
+          loading="lazy"
         />
         Evergrow
       </a>
-      <p className="mt-4 mb-2">© {new Date().getFullYear()} Evergrow. All Rights Reserved.</p>
-      <small>Images designed by Freepik, NASA, and other referenced sources.</small>
+      <p className="mt-4 mb-2">
+        © {new Date().getFullYear()} Evergrow. All Rights Reserved.
+      </p>
+      <small>
+        Images designed by Freepik, NASA, and other referenced sources.
+      </small>
     </div>
   );
 };

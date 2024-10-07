@@ -48,7 +48,7 @@ const Problematic = () => {
       />
       <Article
         title="NASA’s Insights on Water and Climate"
-        image="/images/GraceFo.png"
+        image="/images/GraceFo.webp"
         isFlipped
         columnContent={
           <p>
@@ -147,7 +147,7 @@ const Problematic = () => {
         <h4>Climate Uncertainty and</h4>
         <Article
           title="Challenges for Smallholder Farmers"
-          image="/images/Potato.png"
+          image="/images/Potato.webp"
           isFlipped
           columnContent={
             <div>

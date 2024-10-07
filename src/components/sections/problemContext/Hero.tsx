@@ -6,7 +6,7 @@ function Hero() {
     <div className="relative w-full h-screen">
       <div className="w-full h-screen absolute">
         <Image
-          src="/images/CropBg.jpg"
+          src="/images/CropBg.webp"
           alt="hero"
           fill={true}
           priority={true}

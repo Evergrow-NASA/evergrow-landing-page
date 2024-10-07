@@ -53,7 +53,7 @@ const Features = () => {
         <h4 className="mb-5">What We Offer</h4>
         <Header className="mb-16" title="Features and Benefits" />
         <div className="flex flex-col gap-y-2.5 mx-7 xl:mx-0 w-full">
-        {features.map((feature, index) => (
+          {features.map((feature, index) => (
             <div
               key={index}
               ref={(el) => {
@@ -62,7 +62,7 @@ const Features = () => {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
-             {hoveredIndex === index ? (
+              {hoveredIndex === index ? (
                 <Card
                   icon={feature.icon}
                   title={feature.title}
@@ -81,6 +81,7 @@ const Features = () => {
           alt="PlantGrowingOnSoil"
           width={504}
           height={464}
+          loading="lazy"
         />
         <div className="absolute top-[12.2rem] left-[2.3rem]">
           <Image
@@ -90,11 +91,18 @@ const Features = () => {
             height={100}
             objectPosition="cover"
             className="rounded-full h-[6.6rem] w-[6.6rem]"
+            loading="lazy"
           />
         </div>
       </div>
       <div className="xl:hidden">
-        <Image src="/images/Plant.png" alt="Plant" width={315} height={315} />
+        <Image
+          src="/images/Plant.png"
+          alt="Plant"
+          width={315}
+          height={315}
+          loading="lazy"
+        />
       </div>
     </div>
   );

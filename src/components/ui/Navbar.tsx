@@ -29,7 +29,7 @@ const Navbar = () => {
 
   const onClickDownload = () => {
     router.push("#download");
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -62,6 +62,7 @@ const Navbar = () => {
               height={49.27}
               src="/icons/EvergrowLogo.svg"
               alt="Evergrow Logo"
+              loading="lazy"
             />
             Evergrow
           </a>
@@ -83,7 +84,11 @@ const Navbar = () => {
             <a href="#case_study" className="underline-offset-4 font-light">
               Case Study
             </a>
-            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
+            <Button
+              text={"Download"}
+              style={"DOWNLOAD"}
+              onClick={onClickDownload}
+            />
           </div>
 
           {/* Hamburger menu for mobile devices */}
@@ -150,7 +155,11 @@ const Navbar = () => {
             </a>
           </li>
           <li className="py-4">
-            <Button text={"Download"} style={"DOWNLOAD"} onClick={onClickDownload}/>
+            <Button
+              text={"Download"}
+              style={"DOWNLOAD"}
+              onClick={onClickDownload}
+            />
           </li>
         </ul>
       </div>

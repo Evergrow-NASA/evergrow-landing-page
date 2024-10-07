@@ -49,6 +49,7 @@ const Objectives = () => {
           height={464}
           data-scroll
           data-scroll-speed="0.3"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col-reverse xl:flex-row justify-evenly items-center xl:gap-x-20 h-full">
@@ -58,6 +59,7 @@ const Objectives = () => {
           width={504}
           height={464}
           data-scroll
+          loading="lazy"
           data-scroll-speed="0.2"
         />
         <div className="flex flex-col justify-center xl:justify-start items-center xl:items-start h-full xl:h-auto max-w-[28rem] mb-8 xl:mb-0">

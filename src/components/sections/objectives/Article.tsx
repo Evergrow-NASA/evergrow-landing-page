@@ -18,7 +18,9 @@ const Article: React.FC<ArticleProps> = ({
   return (
     <div>
       <h4>{title}</h4>
-      <div className={`flex flex-col xl:flex-row gap-x-14 xl:gap-x-20 mt-12 text-justify`}>
+      <div
+        className={`flex flex-col xl:flex-row gap-x-14 xl:gap-x-20 mt-12 text-justify`}
+      >
         {isFlipped ? (
           <>
             <Image
@@ -27,6 +29,7 @@ const Article: React.FC<ArticleProps> = ({
               className="h-[200px] w-auto sm:h-[300px] xl:h-[400px] xl:w-auto mx-auto xl:mx-0"
               width={400}
               height={400}
+              loading="lazy"
             />
             <div className="mt-8 xl:mt-0">{columnContent}</div>
           </>
@@ -39,6 +42,7 @@ const Article: React.FC<ArticleProps> = ({
               className="h-[200px] w-auto sm:h-[300px] xl:h-[400px] xl:w-auto mx-auto xl:mx-0"
               width={400}
               height={400}
+              loading="lazy"
             />
           </>
         )}
