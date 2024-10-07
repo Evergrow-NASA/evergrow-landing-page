@@ -13,14 +13,14 @@ const Download = () => {
             <PhoneFrame
               className="place-content-center hidden xl:block xl:mb-20"
               type={"image"}
-              media="/images/VideoScreen.png"
+              media="/images/AppCalendar.png"
             />
           </div>
           <div data-scroll data-scroll-speed="0.4">
             <PhoneFrame
               className="place-content-center xl:mt-60"
               type={"image"}
-              media="/images/VideoScreen.png"
+              media="/images/AppMenu.png"
             />
           </div>
         </div>
