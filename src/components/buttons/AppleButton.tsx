@@ -2,7 +2,7 @@ import React from "react";
 
 const AppleButton = () => {
   return (
-    <a href="#">
+    <a href="https://github.com/Evergrow-NASA/evergrow_mobile_app">
       <svg
         width="139"
         height="40"
